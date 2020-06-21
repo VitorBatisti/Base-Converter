@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>Base Converter</title>
+</head>
+<body>
+  <header>
+    <h1 class="title">Base Conversion Calculator</h1>
+  </header>
+    <div class="main">
+    <table>
+        <tr>
+            <td class="button"><input type="radio" value="binary" id="binary_radio" name="base" onclick="baseConvert(this.value)"><br>Binary</td>
+            <td class="button"><input type="radio" value="decimal" id="decimal_radio" name="base" onclick="baseConvert(this.value)" checked><br>Decimal</td>
+            <td class="button"><input type="radio" value="hex" id="hex_radio" name="base" onclick="baseConvert(this.value)" checked><br>Hex
+            </td>
+        </tr>
+    </table>
+
+    <table class="mode">
+        <tr><td>&nbsp;<span id="number_base"></span>&nbsp;</td></tr>
+    </table>
+    
+    <table>
+        <tr>
+            <td><input class="screen" type="text" id="number_input"></td>
+        </tr>
+   </table>
+
+    <table>
+        <tr>
+            <td><input class="button-keyboard" type="button" value="C" onclick="appendDigit(this.value)"></td>
+            <td><input class="button-keyboard" type="button" value="D" onclick="appendDigit(this.value)"></td>
+            <td><input class="button-keyboard" type="button" value="E" onclick="appendDigit(this.value)"></td>
+            <td><input class="button-keyboard" type="button" value="F" onclick="appendDigit(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input class="button-keyboard" type="button" value="8" onclick="appendDigit(this.value)"></td>
+            <td><input class="button-keyboard" type="button" value="9" onclick="appendDigit(this.value)"></td>
+            <td><input class="button-keyboard" type="button" value="A" onclick="appendDigit(this.value)"></td>  
+            <td><input class="button-keyboard" type="button" value="B" onclick="appendDigit(this.value)"></td> 
+        </tr>
+        <tr>
+            <td><input class="button-keyboard" type="button" value="4" onclick="appendDigit(this.value)"></td>
+            <td><input class="button-keyboard" type="button" value="5" onclick="appendDigit(this.value)"></td>
+            <td><input class="button-keyboard" type="button" value="6" onclick="appendDigit(this.value)"></td>
+            <td><input class="button-keyboard" type="button" value="7" onclick="appendDigit(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input class="button-keyboard" type="button" value="0" onclick="appendDigit(this.value)"></td>
+            <td><input class="button-keyboard" type="button" value="1" onclick="appendDigit(this.value)"></td>
+            <td><input class="button-keyboard" type="button" value="2" onclick="appendDigit(this.value)"></td>
+            <td><input class="button-keyboard" type="button" value="3" onclick="appendDigit(this.value)"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input class="clear-button" type="button" value="Clear" onclick="clearDisplay()"></td>  
+        </tr>
+    </table>
+    </div>
+    <footer>  <div class="final">| E-mail: vitorsnip@gmail.com |<br>| This site is made by Vitor Felipe |
+    </div>
+    </footer>
+</body>
+
+</html>
